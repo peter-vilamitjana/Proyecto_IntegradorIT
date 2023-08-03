@@ -1,0 +1,239 @@
+<h1>Alta</h1>
+<!-- aca mi codigo -->
+
+<div class="main__container">
+    <section class="form-alta">
+        <div class="fotos">
+            <img src="../images/space-scene.webp" alt="" />
+            <img src="../images/monopoly.jpeg" alt="" />
+            <img src="../images/light_saber.jpg" alt="" />
+            <img src="../images/kid_astro.jpg" alt="" />
+            <img src="../images/nerf.jpg" alt="" />
+            <img src="../images/hasbro.png" alt="" />
+        </div>
+
+        <header>
+            <h1>Busca tu Juguete aca!</h1>
+        </header>
+
+        <h2 class="leftTitle">Carga tu producto</h2>
+
+        <!-- ####################### form ####################### -->
+        <form class="alta">
+            <div class="div1">
+                <legend id="legendsToys">Caracteristicas generales</legend>
+                <label id="prodName" for="nameProduct" autofocus
+                    >Nombre del producto:</label
+                >
+
+                <input
+                    class="rounded-input"
+                    type="text"
+                    id="nameProduct"
+                    name="nombre"
+                    required
+                />
+
+                <label for="mark"> Marca:</label>
+                <select name="marcaJuguete" id="mark" required>
+                    <option value="001">Hasbro</option>
+                    <option value="002">Detoys</option>
+                    <option value="003">Luxedo</option>
+                    <option value="004">Mattel</option>
+                    <option value="005">Lego</option>
+                </select>
+
+                <label for="cartegory">Categoría:</label>
+                <select name="category" id="category" required>
+                    <optgroup label="Arte y diseño">
+                        <option value="cad1">Arena kinética</option>
+                        <option value="cad2">Pizarra mágica</option>
+                        <option value="cl1">Producto de libreía</option>
+                        <option value="cad3">Set dibujo</option>
+                        <option value="cad4">Set pintura</option>
+                    </optgroup>
+                    <optgroup label="Bloques y encastres">
+                        <legend>Bloques y encastres</legend>
+                        <option value="cbe1">Bloques</option>
+                        <option value="cbe2">Ladrillos</option>
+                        <option value="cbe3">Set para armar</option>
+                    </optgroup>
+                    <optgroup label="Muñecas y muñecos">
+                        <option value="cm1">Accesorio</option>
+                        <option value="cm2">Articulado</option>
+                        <option value="cm3">Bebote</option>
+                        <option value="cm4">Con acessorios varios</option>
+                        <option value="cm5">Interactivo</option>
+                    </optgroup>
+                    <optgroup label="Rodados">
+                        <option value="cr1">Bicicleta</option>
+                        <option value="cr2">Monopatín</option>
+                        <option value="cr3">Patín</option>
+                        <option value="">Patineta</option>
+                    </optgroup>
+                    <optgroup label="Temáticos">
+                        <option value="ct1">Hogar</option>
+                        <option value="ct2">Herramienta</option>
+                        <option value="ct3">Profesional</option>
+                    </optgroup>
+                    <optgroup label="Vehículos y pistas">
+                        <option value="cvp1">Acuático</option>
+                        <option value="cvp2">Aéreo</option>
+                        <option value="cvp3">Auto</option>
+                        <option value="cvp4">Camión</option>
+                        <option value="cvp5">Camioneta</option>
+                        <option value="cvp´6">De colección</option>
+                        <option value="cvp7">Pista autos</option>
+                        <option value="cvp8">Pista Trenes</option>
+                        <option value="cvp9">Set vehículos</option>
+                    </optgroup>
+                    <optgroup label="Otros">
+                        <option value="co00">Consola</option>
+                        <option value="c07">Didáctico</option>
+                        <option value="co1">Disfraz</option>
+                        <option value="co2">Figura de acción</option>
+                        <option value="co3">Juego de mesa</option>
+                        <option value="c04">Maquillaje</option>
+                        <option value="c05">Peluche</option>
+                        <option value="c06">Video Juego</option>
+                    </optgroup>
+                </select>
+
+                <div id="age">
+                    <legend id="legendsToys">Edad</legend>
+
+                    <label for="ceroAuno">
+                        0 a 1 años
+                        <input
+                            type="radio"
+                            id="ceroAuno"
+                            name="edad"
+                            value="1"
+                            checked
+                        />
+                        <span></span>
+                    </label>
+                    <label for="unoAtres"
+                        >1 a 3 años
+                        <input
+                            type="radio"
+                            id="unoAtres"
+                            name="edad"
+                            value="3"
+                        />
+                        <span></span>
+                    </label>
+                    <label for="tresAseis"
+                        >3 a 6 años
+                        <input
+                            type="radio"
+                            id="tresAseis"
+                            name="edad"
+                            value="6"
+                        />
+                        <span></span>
+                    </label>
+                    <label for="seisAnueve"
+                        >6 a 9 años
+                        <input
+                            type="radio"
+                            id="seisAnueve"
+                            name="edad"
+                            value="9"
+                        />
+                        <span></span>
+                    </label>
+                </div>
+            </div>
+            <div class="div2">
+                <label for="descriptionShorter">Descripción corta:</label>
+                <textarea
+                    name="descripcionCorta"
+                    id="descriptionShorter"
+                    cols="30"
+                    rows="10"
+                >
+                </textarea>
+                <label for="descriptionLonger">Descripción larga:</label>
+                <textarea
+                    name="descripcionLarga"
+                    id="descriptionLonger"
+                    cols="30"
+                    rows="10"
+                ></textarea>
+                <label for="photo">Foto:</label>
+                <input
+                    type="file"
+                    id="photo"
+                    required
+                    multiple
+                    accept="image/*"
+                />
+            </div>
+            <div class="div3">
+                <div id="charge">
+                    <legend id="legendsToys">Envio sin cargo</legend>
+
+                    <label for="chargeN">
+                        No
+                        <input
+                            type="radio"
+                            id="chargeN"
+                            name="charge"
+                            value="no"
+                            checked
+                        />
+                        <span></span>
+                    </label>
+
+                    <label for="chargeN">
+                        Si
+                        <input
+                            type="radio"
+                            id="chargeY"
+                            name="charge"
+                            value="yes"
+                            checked
+                        />
+                        <span></span>
+                    </label>
+                </div>
+
+                <legend id="legendsToys">Precio / Stock / Envío</legend>
+                <label for="priceTag">Precio:</label>
+                <input
+                    class="rounded-input"
+                    type="text"
+                    id="priceTag"
+                    name="precio "
+                    min="0"
+                    required
+                />
+
+                <label for="stock"
+                    >Stock:
+                    <input
+                        type="number"
+                        id="stock"
+                        name="stock"
+                        min="0"
+                        required
+                    />
+                </label>
+
+                <input type="submit" value="Ingresar producto" />
+                <input type="reset" value="Resetear todo" />
+            </div>
+        </form>
+    </section>
+</div>
+
+
+
+
+
+
+<section class="section-products-table">
+    <h2>Listado de productos</h2>
+    <div class="products-table-container"></div>
+</section>

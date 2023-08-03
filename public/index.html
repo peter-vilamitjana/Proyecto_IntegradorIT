@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JUGUETERIA COSMICA</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap"
+            rel="stylesheet"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navbar__container">
+                <img src="images/Logo.png" class="logo" alt="logo" />
+                <a href="index.html" id="navbar__logo">Jugueteria cosmica</a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__btn">
+                        <a href="index.html" class="button"> Inicio</a>
+                    </li>
+                    <li class="navbar__btn">
+                        <a href="#/alta" class="button"> Alta </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#/contact" class="navbar__links"> Contacto </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#/about" class="navbar__links"> Nosotros </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#/faq" class="navbar__links"> FAQ </a>
+                    </li>
+                    <li class="navbar__btn">
+                        <a class="button btn-cart-toggle"> 🛒 </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="cart-modal-container">
+            <button class="x">X</button>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th colspan="2">PRODUCTO</th>
+                        <th>PRECIO</th>
+                        <th>CANT.</th>
+                        <th>SUBTOTAL</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>
+                            <img
+                                src="images/products/monopoly.webp"
+                                alt="Monopoly"
+                            />
+                        </td>
+                        <td>Monopoly</td>
+                        <td class="incremento">$45.000,00</td>
+                        <td>2</td>
+                        <td class="total">$90.000,00</td>
+                        <td><button type="reset" class="trash">🗑️</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img
+                                src="images/products/uno_flip.jpg"
+                                alt="UNO flip"
+                            />
+                        </td>
+                        <td>Uno FLIP</td>
+                        <td>$1.500,00</td>
+                        <td>1</td>
+                        <td>$1.500,00</td>
+                        <td><button class="trash">🗑️</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img
+                                src="images/products/twister.webp"
+                                alt="twister"
+                            />
+                        </td>
+                        <td>Twister</td>
+                        <td>$7.469,00</td>
+                        <td>1</td>
+                        <td>$7.469,00</td>
+                        <td><button class="trash">🗑️</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/products/life.jpg" alt="Life" />
+                        </td>
+                        <td>Life</td>
+                        <td>$10.995,00</td>
+                        <td>3</td>
+                        <td>$32.985,00</td>
+                        <td><button class="trash">🗑️</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img
+                                src="images/products/exploding_kittens.jpg"
+                                alt="Exploding Kittens"
+                            />
+                        </td>
+                        <td>Exploding Kittens</td>
+                        <td>$11.800,00</td>
+                        <td>1</td>
+                        <td>$11.800,00</td>
+                        <td><button class="trash">🗑️</button></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">Total</td>
+
+                        <td>$ 143.754,00</td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <main></main>
+        <footer>
+            <section class="container">
+                <div class="logo__footer">
+                    <img src="images/Logo.png" class="logo" />
+                </div>
+                <div class="contact__footer">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li>(+54) 911 5021-1311</li>
+                        <li>pedrovilamitjana98@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="redes">
+                    <h3>Redes</h3>
+                    <ul>
+                        <li>
+                            <a href="https://wa.me/+5491150211311"
+                                ><i class="fa-brands fa-whatsapp"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/"
+                                ><i class="fa-brands fa-instagram"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/"
+                                ><i class="fa-brands fa-youtube"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/?lang=es"
+                                ><i class="fa-brands fa-twitter"></i
+                            ></a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="copyright">
+                Copyright @Jugueteria Cosmica 2023
+            </section>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
